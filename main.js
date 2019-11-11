@@ -56,7 +56,7 @@ const filterItems = (ary, query) => {
 
 console.log(filterItems(fruits, 'ap'))
 
-const ary1 = [1,2,3,4,5]
+const ary1 = [1, 2, 3, 4, 5]
 
 const reducer = (prev, current) => prev + current
 
@@ -81,3 +81,29 @@ console.log(users.reduce((memo, currentObj) => {
 // }, {})
 
 // console.log(ageGroupCount)
+
+//分割代入
+const { id, name, age } = users[0]
+console.log(id, name, age)
+
+// filterLing
+const adultUsers = users.filter(user => user.age > 20)
+console.log(adultUsers)
+
+// 若い順にsort
+const sortYoungerUsers = users.sort((current, prev) => {
+  return current.age - prev.age
+})
+console.log(sortYoungerUsers)
+// 老いている順にsort
+const sortOldererUsers = sortYoungerUsers.reverse()
+console.log(sortOldererUsers)
+
+const newUsers = country => users.map(user => (
+  {
+    ...user,
+    country
+  }
+))
+
+console.log(newUsers('japan'))
