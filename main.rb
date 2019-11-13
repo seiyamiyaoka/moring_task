@@ -47,3 +47,5 @@ random_init.times { ary << random_init }
 
 p quick_sort(ary)
 
+
+

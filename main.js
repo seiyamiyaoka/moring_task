@@ -1,7 +1,9 @@
+// class定義
 // mapしてkeyを追加
 // mapして階層が深い構造作成
 // filterで比較演算
 // filterを分ける
+// indexOfでの探索
 // reduceの足し算
 // 初期値があるreduce
 // reduceを使ってArray<obj>の数値計算
