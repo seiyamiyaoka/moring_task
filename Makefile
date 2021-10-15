@@ -1,4 +1,4 @@
 run_ruby:
-	ruby practice.rb
+	ruby prac.rb
 run_js:
-	node practice.js
+	node prac.js
